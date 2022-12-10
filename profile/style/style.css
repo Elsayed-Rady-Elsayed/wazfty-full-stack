@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-color: #390da0;
+  --secondry-color: #b7c7de;
+  --text-color: #fff;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline;
+}
+.header {
+  background-color: var(--secondry-color);
+  text-align: center;
+  padding: 15px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+.personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personal-info .left-info {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+.personal-info .left-info .img-part {
+  /* padding: 5px;
+  background-color: white;
+  border: 1px solid #707070;
+  border-radius: 50%; */
+  margin-right: 2%;
+}
+.personal-info .left-info .img-part img {
+  width: 150px;
+  height: 150px;
+}
+.personal-info .left-info .text-part {
+  width: 450px;
+  overflow: auto;
+}
+.personal-info .left-info .text-part h2 {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.personal-info .left-info .text-part .inner-texts {
+  margin-top: 2.5%;
+}
+.personal-info .left-info .text-part .inner-texts p {
+  color: gray;
+  font-size: 17px;
+  margin-top: 5px;
+}
+.personal-info .right-info {
+  margin-right: 2%;
+}
+.personal-info .right-info .edit-profile {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 15px 35px;
+  cursor: pointer;
+}
+.skills,
+.projects,
+.old-jop {
+  margin-top: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 30px;
+}
+.skills h2,
+.projects h2 {
+  color: var(--main-color);
+}
+.skills .skills-list,
+.projects .projects-list,
+.old-jop .old-jop-list {
+  padding: 15px;
+  height: 200px;
+  margin-top: 15px;
+  list-style-position: inside;
+  border: 1px solid #707070;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 25px;
+}
+.skills .skills-list li,
+.projects .projects-list li,
+.old-jop .old-jop-list li {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.head-of-list {
+  display: flex;
+  justify-content: space-between;
+}
+.head-of-list p {
+  margin-right: 2%;
+  font-weight: bold;
+  cursor: pointer;
+}

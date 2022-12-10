@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-color: #390da0;
+  --secondry-color: #b7c7de;
+  --text-color: #fff;
+}
+.application-details {
+  width: 400px;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+.application-details img {
+  width: 200px;
+  height: 200px;
+  margin-right: 5%;
+}
+.application-details .texts h2 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+.application-details .texts p {
+  margin-top: 10px;
+  color: gray;
+}
+.personal-information {
+  margin-top: 5%;
+  margin-left: 10px;
+}
+.personal-information h2 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+.personal-information hr {
+  margin-left: -10px;
+}
+.personal-information form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+}
+.personal-information form .name {
+  display: flex;
+  gap: 50px;
+}
+.personal-information .f-name {
+  flex-basis: 50%;
+}
+.personal-information .l-name {
+  flex-basis: 50%;
+}
+.personal-information form .name label {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+}
+.personal-information form .name input {
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid #707070;
+  padding: 15px;
+  width: 100%;
+}
+.personal-information form label {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
+}
+.personal-information form input {
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid #707070;
+  padding: 10px;
+  margin-top: 10px;
+}
+.personal-information form h2 {
+  margin-top: 5%;
+}
+.personal-information form hr {
+  margin-left: -10px;
+}
+.personal-information form select {
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid #707070;
+  padding: 15px;
+  width: 100%;
+}
+.personal-information form select option {
+  font-size: 17px;
+  font-weight: bold;
+}
+.personal-information form input[type="submit"] {
+  border-radius: 15px;
+  outline: none;
+  background-color: var(--main-color);
+  padding: 15px;
+  width: 50;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}

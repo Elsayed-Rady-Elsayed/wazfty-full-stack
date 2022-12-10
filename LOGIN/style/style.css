@@ -1,0 +1,241 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #390da0;
+  --sec-color: #b7c7de;
+}
+.login-body {
+  position: relative;
+  display: flex;
+}
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--sec-color);
+  z-index: -2;
+}
+
+.bubble.one {
+  left: 15%;
+  top: -5%;
+}
+.bubble.two {
+  width: 300px;
+  height: 300px;
+  left: 70%;
+  top: -10%;
+}
+.bubble.three {
+  left: 50%;
+  bottom: -8%;
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 768px) {
+  .login-body {
+    position: fixed;
+  }
+  .bubble {
+    display: none;
+  }
+}
+.image-part {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image-part img {
+  width: 500px;
+  height: 500px;
+  /* left: 50%;
+  position: absolute; */
+}
+@media (max-width: 768px) {
+  .image-part {
+    display: none;
+  }
+  .auth-data {
+    margin-top: 10px;
+    margin-bottom: 10pxs;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .auth-contnet h2 {
+    padding: 50px 2px 55px 15px;
+  }
+}
+.auth-data {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.auth-data .auth-contnet {
+  width: fit-content;
+  background-color: var(--sec-color);
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--main-color);
+  padding: 15px;
+  border-radius: 35px;
+  border: none;
+}
+.auth-contnet h2 {
+  font-size: 40px;
+  margin: 0px;
+  font-weight: 600;
+  padding: 50px 30px 55px 15px;
+}
+.auth-contnet form {
+  padding: 10px 30px 15px 15px;
+}
+.acc-settings {
+  display: flex;
+  justify-content: space-between;
+}
+.auth-contnet form label {
+  color: var(--main-color);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.auth-contnet form input[type="text"],
+.auth-contnet form input[type="password"] {
+  border-color: transparent transparent var(--main-color) transparent;
+  background-color: transparent;
+  width: calc(100% - 30px);
+  margin-right: 30px;
+  border-width: 3px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+.auth-contnet form input[type="text"]:focus,
+.auth-contnet form input[type="password"]:focus {
+  border-color: transparent transparent var(--main-color) transparent;
+  outline: none;
+  border-width: 3px;
+  font-size: 22px;
+}
+.auth-contnet form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+.auth-contnet form .restore-password {
+  text-align: end;
+  margin-right: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.auth-contnet form input[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.auth-contnet form p {
+  text-align: center;
+  font-weight: bold;
+}
+.auth-contnet form p span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .image-part {
+    display: none;
+  }
+  .login-body {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .auth-contnet h2 {
+    font-size: 28px;
+  }
+  .auth-contnet form input[type="text"],
+  .auth-contnet form input[type="password"] {
+    margin-right: 0;
+    width: 100%;
+  }
+  .auth-contnet form .restore-password {
+    margin-right: 0;
+  }
+  .auth-contnet .acc-settings label {
+    letter-spacing: 0;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .auth-contnet h2 {
+    font-size: 35px;
+  }
+  .auth-contnet form label {
+    font-size: 16px;
+  }
+  .auth-contnet form input[type="text"],
+  .auth-contnet form input[type="password"] {
+    margin-right: 0;
+    width: 100%;
+  }
+  .auth-contnet form .restore-password {
+    margin-right: 0;
+  }
+  .auth-contnet .acc-settings label {
+    letter-spacing: 2;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .auth-contnet h2 {
+    font-size: 35px;
+    margin-right: 200px;
+  }
+  .auth-contnet form label {
+    font-size: 22px;
+  }
+  .auth-contnet form input[type="text"],
+  .auth-contnet form input[type="password"] {
+    margin-right: 0;
+    width: 100%;
+    padding: 15px;
+  }
+  .restore-password {
+    font-size: 22px;
+  }
+  #sign-up-btn {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .image-part img {
+    width: 700px;
+    height: 600px;
+  }
+  .bubble.three {
+    left: 40%;
+    bottom: -13%;
+  }
+  .bubble.two {
+    top: -16%;
+  }
+}

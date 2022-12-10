@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-color: #390da0;
+  --secondry-color: #b7c7de;
+  --text-color: #fff;
+}
+.header {
+  text-align: center;
+  color: var(--main-color);
+  background-color: var(--secondry-color);
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.category-choosen {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.category-choosen h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--main-color);
+}
+.category-choosen .post-job {
+  display: flex;
+  justify-content: center;
+  padding: 15px 50px;
+  align-items: center;
+  border: none;
+  margin-right: 5px;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jobs-list .box {
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #707070;
+  width: calc(100% - 30px);
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+}
+.jobs-list .box img {
+  width: 200px;
+  height: 200px;
+  margin-right: 5%;
+  margin-left: 2%;
+}
+.jobs-list .box .details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.jobs-list .box .details .left h2 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.jobs-list .box .details .left .job-title,
+.jobs-list .box .details .phone-number,
+.jobs-list .box .details .period,
+.jobs-list .box .details .number-of-application {
+  margin-bottom: 10px;
+  color: gray;
+}
+.jobs-list .box .right-part {
+  /* width: 300px; */
+  margin-right: 3%;
+  display: flex;
+  overflow: auto;
+  text-overflow: ellipsis;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.jobs-list .box .right-part .address {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.jobs-list .box .right-part .applay {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 25px;
+  cursor: pointer;
+}
